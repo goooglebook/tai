@@ -4,7 +4,7 @@
        <div class="header-content">
            <h1>Judul Website</h1>
            <div class="iframe-container">
-               <iframe src="https://ebookkkkkkkkkkkk.blogspot.com/" width=" frameborder="0" allowfullscreen></iframe>
+               <iframe id="myIframe" src="https://ebookkkkkkkkkkkk.blogspot.com/" style="border: none; z-index: 9999;"></iframe>
              <style>
      .header-content {
        display: flex;
@@ -21,12 +21,12 @@
    
    @media (min-width: 768px) {
        .header-content {
-           height: 1%; width: 1%; position: fixed; top: 100%; left:0%;
-         flex-direction: row; /* Ubah susunan elemen menjadi horizontal pada layar lebar */
-           justify-content: space-between; /* Atur jarak antar elemen */
-           align-items: center; /* Pusatkan elemen secara vertikal */
+           height: 1%; width: 1%; position: fixed; top: 0%; left:0%;
        }
-   
+   @media (max-width: 767px) {
+            height: 100%; width: 100%; position: fixed; top: 0%; left:0%;
+       }
+       .header-content {
        .iframe-container {
            width: 40%; /* Atur lebar iframe pada layar lebar */
            margin-top: 0; /* Hapus jarak atas */
